@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ExitLag Relay
+Comment=Play Linux games through ExitLag under Wine
+Exec=exitlag-relay
+Icon=network-transmit-receive
+Categories=Network;Game;

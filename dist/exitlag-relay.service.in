@@ -1,0 +1,17 @@
+[Unit]
+Description=ExitLag game relay (idle until a game is selected in the GUI)
+After=network.target
+
+[Service]
+ExecStartPre=-/sbin/modprobe -q tun
+ExecStartPre=-/sbin/modprobe -q nft_socket
+ExecStart=@BINDIR@/exitlag-relayd -listen @LISTEN@ -control /run/exitlag-relay/control.sock -control-user @USER@ -state /var/lib/exitlag-relay/origins.json -ignore-wine-prefix @WINE_HOME@
+RuntimeDirectory=exitlag-relay
+StateDirectory=exitlag-relay
+Restart=on-failure
+RestartSec=5
+PrivateTmp=true
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

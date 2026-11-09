@@ -1,0 +1,30 @@
+// Same version resource as the nfapi.dll ExitLag 5.17.2 ships.
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,5,2,4
+PRODUCTVERSION 1,7,1,3
+FILEFLAGSMASK 0x3f
+FILEFLAGS 0x0
+FILEOS 0x4
+FILETYPE 0x2
+FILESUBTYPE 0x0
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "000004b0"
+		BEGIN
+			VALUE "FileDescription", "nfapi"
+			VALUE "FileVersion", "1, 5, 2, 4"
+			VALUE "InternalName", "nfapi"
+			VALUE "LegalCopyright", "Copyright (C)"
+			VALUE "OriginalFilename", "nfapi.dll"
+			VALUE "ProductName", "NetFilterSDK"
+			VALUE "ProductVersion", "1, 7, 1, 3"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0, 0x4b0
+	END
+END

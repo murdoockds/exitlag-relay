@@ -1,0 +1,9 @@
+// Lets the ExitLag Relay app start and stop its service without a password.
+polkit.addRule(function (action, subject) {
+  if (action.id == "org.freedesktop.systemd1.manage-units" &&
+      action.lookup("unit") == "exitlag-relay.service" &&
+      subject.user == "@USER@" &&
+      ["start", "stop", "restart"].indexOf(action.lookup("verb")) >= 0) {
+    return polkit.Result.YES;
+  }
+});

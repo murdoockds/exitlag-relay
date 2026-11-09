@@ -1,0 +1,20 @@
+LIBRARY nfapi.dll
+EXPORTS
+    "?nf_getProcessNameFromKernel@nfapi@@YAHKPEA_WK@Z"=shim_getProcessNameFromKernel
+    "?nf_setIPEventHandler@nfapi@@YAXPEAVNF_IPEventHandler@1@@Z"=shim_setIPEventHandler
+    "?nf_setTCPFlowCtl@nfapi@@YA?AW4_NF_STATUS@@_KI@Z"=shim_setTCPFlowCtl
+    "?nf_getExtensionsVersion@nfapi@@YAKXZ"=shim_getExtensionsVersion
+    "?nf_addFlowCtl@nfapi@@YA?AW4_NF_STATUS@@PEFAU_NF_FLOWCTL_DATA@1@PEAI@Z"=shim_addFlowCtl
+    "?nf_deleteFlowCtl@nfapi@@YA?AW4_NF_STATUS@@I@Z"=shim_deleteFlowCtl
+    "?nf_getFlowCtlStat@nfapi@@YA?AW4_NF_STATUS@@IPEFAU_NF_FLOWCTL_STAT@1@@Z"=shim_getFlowCtlStat
+    "?nf_setFlowCtlQueueParams@nfapi@@YA?AW4_NF_STATUS@@IPEFAU_NF_FCQUEUE_PARAMS@1@@Z"=shim_setFlowCtlQueueParams
+    "?nf_modifyFlowCtl@nfapi@@YA?AW4_NF_STATUS@@IPEFAU_NF_FLOWCTL_DATA@1@@Z"=shim_modifyFlowCtl
+    "?nf_setUDPFlowCtl@nfapi@@YA?AW4_NF_STATUS@@_KI@Z"=shim_setUDPFlowCtl
+    "?nf_setRulesEx@nfapi@@YA?AW4_NF_STATUS@@PEFAU_NF_RULE_EX@1@H@Z"=shim_setRulesEx
+    "?nf_init@nfapi@@YA?AW4_NF_STATUS@@PEBDPEAVNF_EventHandler@1@@Z"=shim_init
+    "?nf_free@nfapi@@YAXXZ"=shim_free
+    "?nf_udpPostSend@nfapi@@YA?AW4_NF_STATUS@@_KPEBEPEBDHPEFAU_NF_UDP_OPTIONS@1@@Z"=shim_udpPostSend
+    "?nf_udpPostReceive@nfapi@@YA?AW4_NF_STATUS@@_KPEBEPEBDHPEFAU_NF_UDP_OPTIONS@1@@Z"=shim_udpPostReceive
+    "?nf_udpDisableFiltering@nfapi@@YA?AW4_NF_STATUS@@_K@Z"=shim_udpDisableFiltering
+    "?nf_udpEnableFiltering@nfapi@@YA?AW4_NF_STATUS@@_K@Z"=shim_udpEnableFiltering
+    "?nf_udpAddRemoteAddrRule@nfapi@@YA?AW4_NF_STATUS@@_KPEFAU_NF_UDP_REMOTE_ADDR_RULE@1@@Z"=shim_udpAddRemoteAddrRule
