@@ -1,5 +1,7 @@
 # exitlag-relay
 
+![ExitLag under Wine boosting Counter-Strike 2, with the ExitLag Relay app showing the relay on](docs/screenshot.png)
+
 Play games natively on Linux while [ExitLag](https://www.exitlag.com) routes
 their traffic. ExitLag only exists for Windows, so it runs under Wine
 (GE-Proton through umu), and a small system daemon hands it the game's UDP
@@ -34,7 +36,7 @@ Other games that play over UDP should work the same way.
 
 ## Install
 
-### From a release (any systemd distribution)
+### From a release (any systemd distribution) (not tested)
 
 Download the latest `exitlag-relay-*-x86_64-linux.tar.gz` from the
 [releases page](https://github.com/murdoockds/exitlag-relay/releases),
@@ -70,7 +72,7 @@ What gets installed:
 | `/etc/sysctl.d/90-exitlag-relay.conf` | turns off reverse-path filtering on the relay's interface |
 | `/etc/modules-load.d/exitlag-relay.conf` | loads `tun` and `nft_socket` at boot |
 
-### From source
+### From source (not tested)
 
 Needs Go 1.22+ and [zig](https://ziglang.org/download/) (it cross-compiles
 the Windows DLL).
